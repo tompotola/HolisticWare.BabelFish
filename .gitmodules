@@ -1,0 +1,3 @@
+[submodule "submodulez/HolisticWare.Core.Web"]
+	path = submodulez/HolisticWare.Core.Web
+	url = https://github.com/moljac/HolisticWare.Core.Web.git
