@@ -13,14 +13,27 @@ using Xamarin.Forms;
 
 namespace HolisticWare.BabelFish.WinPhone
 {
-	public partial class MainPage : PhoneApplicationPage
+	public partial class MainPage 
+		: 
+		// PhoneApplicationPage
+		global::Xamarin.Forms.Platform.WinPhone.FormsApplicationPage // superclass new in 1.3
 	{
 		public MainPage()
 		{
 			InitializeComponent();
 
+	        SupportedOrientations = SupportedPageOrientation.PortraitOrLandscape;
+
+	        global::Xamarin.Forms.Forms.Init();
+			LoadApplication(new HolisticWare.BabelFish.App()); // new in 1.3
+
+	        return;
+        	/*
+			InitializeComponent();
+
 			Forms.Init();
 			Content = HolisticWare.BabelFish.App.GetMainPage().ConvertPageToUIElement(this);
+			*?
 		}
 	}
 }
