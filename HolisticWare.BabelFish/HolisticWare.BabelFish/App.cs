@@ -7,8 +7,16 @@ using Xamarin.Forms;
 
 namespace HolisticWare.BabelFish
 {
-	public class App
+	public class App : Application // superclass new in 1.3
 	{
+	    public App ()
+	    {
+	        // The root page of your application
+	        MainPage = App.GetMainPage(); // property new in 1.3
+
+	        return;
+	    }
+
 		public static Page GetMainPage()
 		{
 			return new MainPage();
