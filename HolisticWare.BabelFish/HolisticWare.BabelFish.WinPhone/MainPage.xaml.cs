@@ -33,7 +33,7 @@ namespace HolisticWare.BabelFish.WinPhone
 
 			Forms.Init();
 			Content = HolisticWare.BabelFish.App.GetMainPage().ConvertPageToUIElement(this);
-			*?
+			*/
 		}
 	}
 }
